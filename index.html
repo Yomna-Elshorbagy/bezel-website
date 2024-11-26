@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bezel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!------------------------------ Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="logo-img d-block">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo-light.png"
+              alt=""
+              style="max-height: 35px"
+            />
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div
+          class="icons d-flex flex-wrap align-items-center position-relative gap-3"
+        >
+          <a href="#" class="nav-icon"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="nav-icon"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="nav-icon"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------- header Section -->
+    <header
+      class="header-section d-flex justify-content-center align-items-center carousel slide"
+      id="carouselExampleIndicators"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active image1">
+          <div
+            class="header-content d-flex flex-column justify-content-center align-items-center text-white position-absolute top-50 start-50 translate-middle"
+          >
+            <h2 class="h1 lh-1">Get Awesome.</h2>
+            <h5 class="my-3">
+              We are an innovative company making digital stuff.
+            </h5>
+            <div class="button">
+              <a href="#" class="btn btn-info btn-lg text-white me-2">
+                Read More</a
+              >
+              <a href="#" class="btn btn-outline-light btn-lg"> Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item image2">
+          <div
+            class="header-content d-flex flex-column justify-content-center align-items-center text-white position-absolute top-50 start-50 translate-middle"
+          >
+            <h2 class="h1 lh-1">Create With Bezel.</h2>
+            <h5 class="my-3">We help ambitious companies create new value.</h5>
+            <div class="button">
+              <a href="#" class="btn btn-info btn-lg text-white me-2">
+                Hire Us</a
+              >
+              <a href="#" class="btn btn-outline-light btn-lg"> Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container pt-5 pb-5 mt-3 mb-3">
+          <div class="about padding-t text-center">
+            <h6 class="mb-4">Who We Are</h6>
+            <p>
+              We are an innovative company. We develop and design
+              <span id="typed-text"></span> for <br />
+              costumers around the world. Our clients are some of the most
+              forward-looking companies in the world.
+            </p>
+            <button class="btn btn-outline-dark">Read More</button>
+          </div>
+        </div>
+        <hr class="mb-5" />
+      </section>
+
+      <section id="team" class="padding-t pb-5">
+        <div class="container">
+          <div class="heading">
+            <span class="heading-cover">C</span>
+            <h2 class="heading-title text-center">Creative Team</h2>
+          </div>
+          <p class="heading-desc text-center">We are digital thinkers</p>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-3 profile">
+              <img src="./images/team-1.jpg" alt="team-1" />
+              <div class="layer">
+                <div class="team-info text-white">
+                  <ul
+                    class="team-social list-unstyled d-flex flex-wrap gap-3 p-3"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <div class="team-data">
+                    <h4>Luke Cage</h4>
+                    <span>Founder &amp; CEO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 profile">
+              <img src="./images/team-2.jpg" alt="team-1" />
+              <div class="layer">
+                <div class="team-info text-white">
+                  <ul
+                    class="team-social list-unstyled d-flex flex-wrap gap-3 p-3"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <div class="team-data">
+                    <h4>Jessica Jones</h4>
+                    <span>Product Designer </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 profile">
+              <img src="./images/team-3.jpg" alt="team-1" />
+              <div class="layer">
+                <div class="team-info text-white">
+                  <ul
+                    class="team-social list-unstyled d-flex flex-wrap gap-3 p-3"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <div class="team-data">
+                    <h4>Matt Murdock</h4>
+                    <span>Lead Developer </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 profile">
+              <img src="./images/team-4.jpg" alt="team-1" />
+              <div class="layer">
+                <div class="team-info text-white">
+                  <ul
+                    class="team-social list-unstyled d-flex flex-wrap gap-3 p-3"
+                  >
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        target="_blank"
+                        class="text-decoration-none text-white"
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <div class="team-data">
+                    <h4>Claire Temple</h4>
+                    <span>Sales Manager </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="container padding">
+          <div class="row text-white p-5">
+            <div class="col-sm-6 col-lg-2">Stunning Design</div>
+            <div class="col-sm-6 col-lg-2">Time Saver</div>
+            <div class="col-sm-6 col-lg-2">Clean Code</div>
+            <div class="col-sm-6 col-lg-2">Customizable</div>
+            <div class="col-sm-6 col-lg-2">Perfect Layout</div>
+            <div class="col-sm-6 col-lg-2">Retina Ready</div>
+          </div>
+          <div class="container-fluid pt-5">
+            <div class="row">
+              <div class="col-md-4 me-5 text-white margin-end">
+                <h2 class="pb-3">What We Do.</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aliquam ipsam ullam incidunt itaque nemo omnis temporibus
+                  totam quibusdam repellat vero, recusandae excepturi
+                  dignissimos velit et alias amet, quia facilis perferendis.
+                </p>
+              </div>
+
+              <div class="col-md-3 mt-3 ms-5 text-white margin-start">
+                <ul class="list-unstyled">
+                  <li class="mb-2 ms-5">
+                    <i class="fa-regular fa-circle-check"></i> Research
+                  </li>
+                  <li class="mb-2 ms-5">
+                    <i class="fa-regular fa-circle-check"></i> Opportunity
+                    Analysis
+                  </li>
+                  <li class="mb-2 ms-5">
+                    <i class="fa-regular fa-circle-check"></i> Consulting
+                  </li>
+                  <li class="mb-2 ms-5">
+                    <i class="fa-regular fa-circle-check"></i> Brand Planning
+                  </li>
+                  <li class="mb-2 ms-5">
+                    <i class="fa-regular fa-circle-check"></i> Customer Support
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3 mt-3 text-white margin-start">
+                <ul class="list-unstyled">
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check"></i> Logo & Branding
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check"></i> Style Guides
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check"></i> Motion Graphics
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check"></i> UX/UI Design
+                  </li>
+                  <li class="mb-2">
+                    <i class="fa-regular fa-circle-check"></i> Social Media
+                    Design
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cards" class="padding-t pb-5">
+        <div class="container">
+          <div class="heading">
+            <span class="heading-cover">C</span>
+            <h2 class="heading-title text-center">Cheap Prices</h2>
+          </div>
+          <p class="heading-desc text-center">We provide the best quality.</p>
+          <div class="plans ms-4 mt-4 pt-3">
+            <div class="row g-5">
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card pricing-card h-100 p-5">
+                  <div class="card-header">Starter</div>
+                  <div class="card-body">
+                    <div class="price">$9</div>
+                    <hr />
+                    <div class="card-content">
+                      <ul class="list-unstyled mt-3">
+                        <li>Unlimited Connections</li>
+                        <li>24/7 Support</li>
+                        <li>Full SSL Protection</li>
+                        <li>Unlimited Channels</li>
+                      </ul>
+                      <a href="#" class="btn btn-signup mt-3">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card pricing-card h-100 p-5">
+                  <div class="card-header">Silver</div>
+                  <div class="card-body">
+                    <div class="price">$19</div>
+                    <hr />
+                    <div class="card-content">
+                      <ul class="list-unstyled mt-3">
+                        <li>Unlimited Connections</li>
+                        <li>24/7 Support</li>
+                        <li>Full SSL Protection</li>
+                        <li>Unlimited Channels</li>
+                      </ul>
+                      <a href="#" class="btn btn-signup mt-3">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card pricing-card h-100 p-5 special pb-5">
+                  <div class="card-header">
+                    Gold
+                    <span class="rounded-pill p-1">Best Value </span>
+                  </div>
+                  <div class="card-body">
+                    <div class="price text-bg">$29</div>
+                    <hr />
+                    <span class="best-value">BEST VALUE</span>
+                    <div class="card-content">
+                      <ul class="list-unstyled mt-3">
+                        <li>Unlimited Connections</li>
+                        <li>24/7 Support</li>
+                        <li>Full SSL Protection</li>
+                        <li>Unlimited Channels</li>
+                      </ul>
+                      <a href="#" class="btn btn-signup mt-3">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card pricing-card h-100 p-5">
+                  <div class="card-header">Platinum</div>
+                  <div class="card-body">
+                    <div class="price">$49</div>
+                    <hr />
+                    <div class="card-content">
+                      <ul class="list-unstyled mt-3">
+                        <li>Unlimited Connections</li>
+                        <li>24/7 Support</li>
+                        <li>Full SSL Protection</li>
+                        <li>Unlimited Channels</li>
+                      </ul>
+                      <a href="#" class="btn btn-signup mt-3">Sign Up</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonial" class="padding-t pb-5">
+        <div class="container">
+          <div
+            id="indicators-testimonial"
+            data-bs-ride="carousel"
+            class="carousel slide w-50 mx-auto"
+          >
+            <div class="carousel-indicators place">
+              <button
+                type="button"
+                data-bs-target="#indicators-testimonial"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#indicators-testimonial"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <h4 class="text-center">Happy Customers</h4>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <div>
+                  <img
+                    src="./images/testimonial-1.jpg"
+                    class="customer-img shadow"
+                    alt="testimonial 1"
+                  />
+                </div>
+                <div class="customer border border-2 p-5">
+                  <div class="caption">
+                    <h4>Marissa Mayer</h4>
+                    <span class="h6">CEO, Yahoo</span>
+                    <p class="">
+                      Quo rem cumque facere modi beatae. Deleniti nisi, repellat
+                      quae aspernatur consequatur consequuntur, fugit asperiores
+                      delectus beatae. Quae veniam, quidem cupiditate quia? Ut
+                      iste deleniti.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item text-center">
+                <div>
+                  <img
+                    src="./images/testimonial-2.jpg"
+                    class="customer-img shadow"
+                    alt="testimonial 1"
+                  />
+                </div>
+                <div class="customer border border-2 p-5">
+                  <div class="caption">
+                    <h4>Marissa Mayer</h4>
+                    <span class="h6">Founder &amp; CEO, Facebook</span>
+
+                    <p class="">
+                      Consectetur adipisicing elit. Perspiciatis aperiam quaerat
+                      iure veritatis fugit debitis, repellat aut accusantium
+                      culpa ipsum ex ipsa blanditiis recusandae, sit similique,
+                      eius assumenda porro pariatur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="indicators">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#indicators-testimonial"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="indicator-1"
+                  ><i class="fa-solid fa-arrow-left"></i
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#indicators-testimonial"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="indicator-2"
+                  ><i class="fa-solid fa-arrow-right"></i
+                ></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="padding-t">
+        <div class="container-fluid">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-sm-12 col-md-6 map-side">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345086166!2d144.96305781531694!3d-37.81362797975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778d48eb44c0b2!2sMelbourne%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1689071562645!5m2!1sen!2sus"
+                width="100%"
+                height="800px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-sm-12 col-md-6 form-side">
+              <div class="container-fluid padding-se">
+                <div class="heading">
+                  <span class="heading-cover">G</span>
+                <h1 class="heading-title">Get In Touch</h1>
+                </div>
+                <p class="heading-desc">Let's work together. </p>
+                <form action="#" class="form-group pt-5" method="post">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">your name</label>
+                    <input type="text" class="form-control" id="name" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">your email</label>
+                    <input type="text" class="form-control" id="email" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">phone Number</label>
+                    <input type="text" class="form-control" id="phone" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      name=""
+                      id="message"
+                      rows="3"
+                    ></textarea>
+                    <button class="btn btn-color mt-3" type="submit">
+                      Send message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

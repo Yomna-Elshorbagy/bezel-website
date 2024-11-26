@@ -1,0 +1,395 @@
+/****global style****/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #787878;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.padding-t {
+  padding-top: 90px;
+}
+.heading-title {
+  font-family: Poppins;
+  font-weight: 700;
+  color: rgb(31, 31, 31);
+  font-size: 38px;
+  line-height: 49.4px;
+  position: absolute;
+}
+.heading-desc {
+  font-weight: 400;
+  color: rgb(120, 120, 120);
+  font-size: 18px;
+  line-height: 23.4px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading span {
+  font-size: 80px;
+  font-weight: bolder;
+  color: #ebe8e8;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+/**** start header section****/
+.header-section {
+  /* background: url("../images/bg-image-28.jpg") no-repeat center center; */
+  /* background-size: cover; */
+  height: 100vh !important;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.header-section .header-content {
+  z-index: 2;
+}
+.header-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header-section p {
+  font-size: 1.25rem;
+}
+
+.header-section .carousel-inner .image1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-image-28.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.header-section .carousel-inner .image2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-image-29.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+/**** Start Navbar styling ****/
+#navbar {
+  transition: background-color 0.3s;
+  border-bottom: 2px solid #416277;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+#navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  padding-bottom: 5px;
+  margin: 0 15px;
+  transition: border-color 0.3s ease;
+}
+#navbar .navbar-nav .nav-link:hover {
+  color: #ddd;
+}
+
+#navbar .navbar-brand {
+  max-height: 40px;
+  width: auto;
+}
+
+#navbar .icons a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+#navbar .icons a:hover {
+  color: #ddd;
+}
+#navbar .icons .nav-icon {
+  font-size: 1rem;
+  padding-left: 15px;
+}
+#navbar .icons::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  width: 1px;
+  height: 80px;
+  background-color: #6d6666;
+}
+
+/** for scrolling ^^ **/
+/* #navbar .navbar.scrolled {
+  background-color: #fff !important;
+} */
+.scrolled {
+  background-color: #000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* #navbar .navbar.scrolled .nav-link,
+#navbar .navbar.scrolled .navbar-brand {
+  color: #000 !important;
+} */
+/**** End Navbar styling ****/
+
+/****** start about *******/
+#about .about {
+  width: 60%;
+  margin: auto;
+}
+#about .about h6 {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+  font-size: 13px;
+  line-height: 16.9px;
+}
+
+#about .about button {
+  font-size: 11px;
+  border-radius: 0;
+  padding: 15px 30px;
+}
+#about .about p {
+  font-weight: 300;
+  color: rgb(120, 120, 120);
+  font-size: 24px;
+  line-height: 36px;
+}
+#typed-text {
+  font-weight: 400;
+  color: rgb(0, 195, 218);
+  font-size: 24px;
+}
+
+/***** start team section *****/
+#team .profile img {
+  display: inline-block;
+  width: 100%;
+}
+#team .profile {
+  position: relative;
+  overflow: hidden;
+}
+#team .team-info {
+  position: absolute;
+  width: 92%;
+  height: 100%;
+  top: 100%;
+  left: 12px;
+  background-color: rgba(0, 195, 218, 0.8);
+  transition: top 0.3s ease;
+}
+
+#team .profile:hover .team-info {
+  top: 0;
+}
+#team .team-info .team-data {
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#team .team-info .team-data h4 {
+  font-size: 16px;
+}
+#team .team-info .team-data span {
+  font-size: 12px;
+}
+
+/***** start footer ****/
+
+#footer {
+  background-color: #626262;
+  padding: 50px 0;
+}
+#footer ul li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+#footer .fa-check-circle {
+  margin-right: 10px;
+}
+
+.padding {
+  padding: 80px 50px;
+}
+
+.margin-start {
+  margin-left: 90px;
+}
+.margin-end {
+  margin-right: 90px;
+}
+
+/**************start card pricing section**************/
+.btn-signup {
+  background-color: #00d5ee;
+  color: white;
+}
+.btn-signup:hover {
+  background-color: #008bbf;
+}
+
+.pricing-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card .card-header {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(31, 31, 31);
+  background-color: transparent;
+  line-height: 16.9px;
+  border: none;
+}
+
+.pricing-card .card-header span {
+  background-color: #00d5ee;
+  position: absolute;
+  right: 10px;
+}
+.pricing-card .card-body .text-bg {
+  color: #00d5ee !important;
+}
+.special {
+  border: 2px solid #00c0ff;
+  background-color: #f8faff;
+  z-index: 1;
+  transform: scale(1.1);
+  position: relative;
+}
+.pricing-card .card-body .price {
+  font-family: Poppins;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+  font-size: 55px;
+  line-height: 71.5px;
+}
+.pricing-card .card-body .card-content {
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  color: rgb(120, 120, 120);
+  font-size: 16px;
+  line-height: 34px;
+}
+
+/************start customer section**************/
+#testimonial {
+  background-color: #f7f7f7;
+  padding-bottom: 150px !important;
+}
+#testimonial h4 {
+  font-family: Poppins;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+  font-size: 13px;
+  line-height: 16.9px;
+}
+#testimonial .customer {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+#testimonial .customer h4 {
+  font-family: Poppins;
+  font-weight: 700;
+  color: rgb(31, 31, 31);
+  font-size: 24px;
+  line-height: 31.2px;
+}
+#testimonial .customer span {
+  font-family: Poppins;
+  font-weight: 500;
+  color: rgb(120, 120, 120);
+  font-size: 12px;
+  line-height: 18px;
+}
+#testimonial .customer p {
+  font-family: Source Sans Pro;
+  font-weight: 300;
+  color: rgb(120, 120, 120);
+  size: 18px;
+  line-height: 27px;
+  padding-top: 15px;
+}
+#testimonial .carousel-inner .customer-img {
+  width: 100px;
+  border-radius: 50%;
+  transform: translateY(50%);
+}
+
+#testimonial .carousel-indicators.place {
+  position: absolute;
+  bottom: -100px;
+}
+
+#testimonial .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #787878;
+}
+
+#testimonial .indicators .indicator-1 {
+  position: absolute;
+  top: 50%;
+  left: -200px;
+}
+#testimonial .indicators .indicator-2 {
+  position: absolute;
+  top: 50%;
+  right: -200px;
+}
+
+#testimonial .indicators i {
+  color: #6d6666;
+  font-size: 25px;
+}
+
+/***** start contact *****/
+.padding-se {
+  width: 70%;
+  margin: auto;
+}
+#contact .heading {
+  justify-content: flex-start;
+}
+
+#contact .form-side label {
+  font-family: Poppins;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+  font-size: 13px;
+  line-height: 19.5px;
+}
+#contact .form-side .btn-color {
+  color: #fff;
+  background-color: #00c3da;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 20px;
+}
+#contact .form-side .btn-color:hover {
+  background-color: #56cdda;
+}
